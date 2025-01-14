@@ -72,7 +72,8 @@ This code helps us to debug the code in assembly for every a and how many times 
 
 
 
-![task 3](https://github.com/user-attachments/assets/6faaff4d-da14-4015-9975-76f2447ec01f)
+![image](https://github.com/user-attachments/assets/ffb54d10-3edb-40bc-9247-92669b2f08a8)
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -81,13 +82,15 @@ This code helps us to debug the code in assembly for every a and how many times 
 ***
 **CHECKING CODE FIRST USING ./A.OUT** 
 
-![edit 1](https://github.com/user-attachments/assets/aa56362e-d925-46f4-b9a3-0678b836a882)
+![image](https://github.com/user-attachments/assets/3f37c5dc-f1cf-4043-8d13-9b2b6ad81efa)
+
 
 ***
 
 **COMPILING THROUGH RISCV**
 
-![extra 2](https://github.com/user-attachments/assets/2383ac8a-7ee6-4197-9216-08eb054d65c8)
+![image](https://github.com/user-attachments/assets/8c559dc0-e7cf-41ba-bfa1-f5bb9e375c0a)
+
 
 
 
@@ -98,4 +101,5 @@ This code helps us to debug the code in assembly for every a and how many times 
 
 **DOING DEBUG**
 
-![extra 3](https://github.com/user-attachments/assets/0bb1ef8e-a44f-4070-a207-8ea2c5cdf3fb)
+![image](https://github.com/user-attachments/assets/2a779d06-acb1-450e-a4f7-bbea177897bf)
+
