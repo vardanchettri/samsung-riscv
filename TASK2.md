@@ -1,5 +1,6 @@
+---------------------------------------------------
 <details>
-<summary><b>Task 1 :RISC-V-objdmp of compiled C code </b> </summary>   
+<summary><b>Task 2 :Debugging using SPIKE </b> </summary>   
 <br>
 
 # Internship_Task_2
