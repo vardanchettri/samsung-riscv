@@ -1,3 +1,20 @@
+# INTRODUCTION
+#### As part of my internship at VSD Squadron, I have had the opportunity to explore and work with the CH32V003F4U6, a 32-bit RISC-V microcontroller. VSD Squadron is known for its contributions to open-source EDA tools, RISC-V development, and embedded systems. 
+![Screenshot 2025-02-15 191652](https://github.com/user-attachments/assets/0e0cc8da-b74b-4812-8e98-028b9d95c2fa)
+***
+#### Basic Details  
+##### Name: VARDAN CHETTRI  
+##### College: Sri Sathya Sai Institute of Higher Learning   
+##### Email ID: vardanpsn@gmail.com  
+##### GitHub Profile: vardanchettri
+***
+
+
+
+
+#### Through hands-on projects, I have learned how to interface sensors, control peripherals, and optimize code for real-world applications. This repository showcases one of my projects, where I implement an ultrasonic proximity detector with LED alerts, using the VSD Squadron Mini board. The experience has deepened my understanding of RISC-V architecture, firmware development, and hardware interfacing.
+
+***
 <details>
 <summary><b>Task 1:RISC-V-objdmp of compiled C code </b> </summary>   
 <br>
@@ -1049,6 +1066,8 @@ void loop() {
 ```
 </details>
 
+# AKNOWLEDGEMENT
 
+I would like to express my heartfelt gratitude to Kunal Sir  for his invaluable guidance and support throughout the journey. His mentorship has helped me gain a deeper understanding of the VSD QUADRON (CH32V003F4U6) microcontroller and RISC-V architecture. 
 
 
