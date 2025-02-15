@@ -904,6 +904,9 @@ gtkwave iiitb_rv32i.vcd
 
 
 ***
+# CIRCUIT DIAGRAM
+![image](https://github.com/user-attachments/assets/79d7bfdf-f695-4f3a-8015-ca0068845237)
+
 # Table for Pin connection:
 
 
