@@ -881,3 +881,45 @@ gtkwave iiitb_rv32i.vcd
 
 
 ----------------------------------------------------------------------------------------------------------------------
+<details>
+<summary><b>Task 5 :"SMART ULTRASONIC PROXIMITY DETECTOR WITH LED ALERT"  </b> </summary>   
+<br>  
+
+# Overview
+
+#### This project uses an ultrasonic sensor to measure distance and control an LED based on object proximity. The TRIG_PIN sends a pulse, while the ECHO_PIN measures the reflection time to calculate distance. If an object is within 10 cm, the LED turns ON instantly; otherwise, it remains OFF. The use of pulseIn() ensures fast and accurate measurements, while a 30ms timeout prevents delays, making the system highly responsive.
+
+#### This system is useful for object detection, obstacle avoidance, and safety applications. It can be implemented in robotics, smart parking systems, automated doors, and security alarms to detect nearby objects and trigger actions accordingly. The fast response ensures real-time decision-making, making it ideal for critical applications. The project runs on the CH32V003F4U6 microcontroller, which features a 32-bit RISC-V core based on the RV32EC instruction set, ensuring efficient performance and low power consumption. 
+***
+# COMPONENTS REQUIRED TO BUILD SMART ULTRASONIC PROXIMITY DETECTOR WITH LED ALERT:
+*  VSD SQUADRON MINI (CH32V003F4U6 chip with 32-bit RISC-V core based on RV32EC instruction set)
+* HC-SRO4 sensor
+
+
+* Bread Board
+* Jumper Wires
+
+
+##### The SMART ULTRASONIC PROXIMITY DETECTOR WITH LED ALERT is built using essential electronic components to ensure accurate distance measurement and quick response. The VSD SQUADRON MINI, powered by the CH32V003F4U6 microcontroller with a 32-bit RISC-V core (RV32EC instruction set), serves as the brain of the system, handling sensor data and controlling outputs efficiently. The HC-SR04 ultrasonic sensor is used to detect object proximity by measuring the time delay between transmitted and received sound waves. A breadboard provides a flexible platform for assembling the circuit without soldering, while jumper wires ensure seamless electrical connections between the components. Together, these components create a fast, reliable, and responsive proximity detection system suitable for automation and safety applications. 
+
+
+***
+# Table for Pin connection:
+
+
+
+
+## HC-SRO4 sensor to CH32V003x
+|  HC-SRO4 sensor  | CH32V003x Pin |
+|--------------|--------------|
+| VCC         | VIN          |
+|GND          | D2           |
+| TRIGGER     | GND          |
+| ECHO        | 
+
+
+
+</details>
+
+
+
