@@ -912,14 +912,85 @@ gtkwave iiitb_rv32i.vcd
 ## HC-SRO4 sensor to CH32V003x
 |  HC-SRO4 sensor  | CH32V003x Pin |
 |--------------|--------------|
-| VCC         | VIN          |
-|GND          | D2           |
-| TRIGGER     | GND          |
-| ECHO        | 
+| VCC         | 5 volts          |
+|GND          | ground           |
+| TRIGGER     | PD2          |
+| ECHO        | PD5
+| LED       |   PD6  |
+
+# WORKING OF THE  CODE
+
+The code utilizes an ultrasonic sensor to measure the distance to an object and control an LED based on that distance. In the setup() function, the necessary pins are configured: TRIG_PIN (PD2) for sending the trigger pulse, ECHO_PIN (PD5) for receiving the reflected echo, and LED_PIN (PD6) to control the LED. In the loop() function, the TRIG_PIN sends a pulse to the ultrasonic sensor, causing it to emit an ultrasonic wave. The ECHO_PIN then listens for the echo and measures the time it takes for the wave to return. This duration is converted into a distance using the speed of sound. If the distance is less than 10 cm, the LED_PIN is set HIGH, turning on the LED; otherwise, it is set LOW to turn the LED off. This process repeats every 500 milliseconds, continuously monitoring the distance and adjusting the LED based on proximity. This setup can be used for proximity sensing, such as in obstacle detection or distance measurement applications.
+
+# PROGRAMME CODE
+```
+#include Arduino.h
+
+#define TRIG_PIN PD2  
+#define ECHO_PIN PD5  
+#define LED_PIN  PD6  
+
+void setup() {
+    pinMode(TRIG_PIN, OUTPUT);
+    pinMode(ECHO_PIN, INPUT);
+    pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+    uint16_t duration;
+    int distance;
+
+     Send trigger pulse
+    digitalWrite(TRIG_PIN, LOW);
+    delayMicroseconds(2);
+    digitalWrite(TRIG_PIN, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(TRIG_PIN, LOW);
+
+     Wait for Echo pin (with timeout)
+    unsigned long startTime = millis();
+    while (digitalRead(ECHO_PIN) == LOW) {
+        if (millis() - startTime  100) return;   Exit if timeout
+    }
+
+     Measure Echo duration
+    duration = 0;
+    while (digitalRead(ECHO_PIN) == HIGH) {
+        duration++;
+        delayMicroseconds(1);
+    }
+
+     Convert to distance (integer math)
+    distance = (duration  34)  2000;
+
+     LED logic
+    if (distance  0 && distance  10) {
+        digitalWrite(LED_PIN, HIGH);
+    } else {
+        digitalWrite(LED_PIN, LOW);
+    }
+
+    delay(500);
+}
+
+
+
+```
+
+
 
 
 
 </details>
+
+----------------------------------------------------------------------------
+<details>
+<summary><b>Task 5 :"SMART ULTRASONIC PROXIMITY DETECTOR WITH LED ALERT"  </b> </summary>   
+<br>  
+
+https://github.com/user-attachments/assets/b8f7b0cc-caa6-40f3-84d9-da3c9a27a058
+</details>
+
 
 
 
