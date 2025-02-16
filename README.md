@@ -944,7 +944,7 @@ The code utilizes an ultrasonic sensor to measure the distance to an object and 
 
 # PROGRAMME CODE
 ```
-#include Arduino.h
+#include <Arduino.h>
 
 #define TRIG_PIN PD2  
 #define ECHO_PIN PD5  
@@ -960,31 +960,31 @@ void loop() {
     uint16_t duration;
     int distance;
 
-     Send trigger pulse
+    // Send trigger pulse
     digitalWrite(TRIG_PIN, LOW);
     delayMicroseconds(2);
     digitalWrite(TRIG_PIN, HIGH);
     delayMicroseconds(10);
     digitalWrite(TRIG_PIN, LOW);
 
-     Wait for Echo pin (with timeout)
+    // Wait for Echo pin (with timeout)
     unsigned long startTime = millis();
     while (digitalRead(ECHO_PIN) == LOW) {
-        if (millis() - startTime  100) return;   Exit if timeout
+        if (millis() - startTime > 100) return;  // Exit if timeout
     }
 
-     Measure Echo duration
+    // Measure Echo duration
     duration = 0;
     while (digitalRead(ECHO_PIN) == HIGH) {
         duration++;
         delayMicroseconds(1);
     }
 
-     Convert to distance (integer math)
-    distance = (duration  34)  2000;
+    // Convert to distance (integer math)
+    distance = (duration * 34) / 2000;
 
-     LED logic
-    if (distance  0 && distance  10) {
+    // LED logic
+    if (distance > 0 && distance < 10) {
         digitalWrite(LED_PIN, HIGH);
     } else {
         digitalWrite(LED_PIN, LOW);
@@ -1012,7 +1012,7 @@ https://github.com/user-attachments/assets/b8f7b0cc-caa6-40f3-84d9-da3c9a27a058
 
 # PROGRAMME CODE
 ```
-#include Arduino.h
+#include <Arduino.h>
 
 #define TRIG_PIN PD2  
 #define ECHO_PIN PD5  
@@ -1028,31 +1028,31 @@ void loop() {
     uint16_t duration;
     int distance;
 
-     Send trigger pulse
+    // Send trigger pulse
     digitalWrite(TRIG_PIN, LOW);
     delayMicroseconds(2);
     digitalWrite(TRIG_PIN, HIGH);
     delayMicroseconds(10);
     digitalWrite(TRIG_PIN, LOW);
 
-     Wait for Echo pin (with timeout)
+    // Wait for Echo pin (with timeout)
     unsigned long startTime = millis();
     while (digitalRead(ECHO_PIN) == LOW) {
-        if (millis() - startTime  100) return;   Exit if timeout
+        if (millis() - startTime > 100) return;  // Exit if timeout
     }
 
-     Measure Echo duration
+    // Measure Echo duration
     duration = 0;
     while (digitalRead(ECHO_PIN) == HIGH) {
         duration++;
         delayMicroseconds(1);
     }
 
-     Convert to distance (integer math)
-    distance = (duration  34)  2000;
+    // Convert to distance (integer math)
+    distance = (duration * 34) / 2000;
 
-     LED logic
-    if (distance  0 && distance  10) {
+    // LED logic
+    if (distance > 0 && distance < 10) {
         digitalWrite(LED_PIN, HIGH);
     } else {
         digitalWrite(LED_PIN, LOW);
@@ -1060,7 +1060,6 @@ void loop() {
 
     delay(500);
 }
-
 
 
 ```
