@@ -1008,7 +1008,10 @@ void loop() {
 <summary><b>Task 6 :"WORKING OF FINAL PRODUCT"  </b> </summary>   
 <br>  
 
-https://github.com/user-attachments/assets/b8f7b0cc-caa6-40f3-84d9-da3c9a27a058
+
+https://github.com/user-attachments/assets/658ab938-d920-4c2f-830a-552d1f6b3941
+
+
 
 # PROGRAMME CODE
 ```
