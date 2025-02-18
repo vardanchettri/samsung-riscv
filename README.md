@@ -1,6 +1,13 @@
 # INTRODUCTION
-#### As part of my internship at VSD Squadron, I have had the opportunity to explore and work with the CH32V003F4U6, a 32-bit RISC-V microcontroller. VSD Squadron is known for its contributions to open-source EDA tools, RISC-V development, and embedded systems. 
-![Screenshot 2025-02-15 191652](https://github.com/user-attachments/assets/0e0cc8da-b74b-4812-8e98-028b9d95c2fa)
+#### As part of my internship at VSD Squadron Mini, where I am working with the CH32V003F4U6, a 32-bit RISC-V microcontroller. VSD Squadron Mini focuses on RISC-V development, embedded systems, and low-level programming,
+
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/0e0cc8da-b74b-4812-8e98-028b9d95c2fa" width="40%">
+</div>
+
+
+providing hands-on experience with microcontroller interfacing and software-hardware integration. In this repository, I document my work on various embedded system projects, showcasing the practical application of RISC-V architecture and its integration into real-world solutions.
 ***
 #### Basic Details  
 ##### Name: VARDAN CHETTRI  
@@ -922,7 +929,15 @@ gtkwave iiitb_rv32i.vcd
 
 ***
 # CIRCUIT DIAGRAM
-![image](https://github.com/user-attachments/assets/79d7bfdf-f695-4f3a-8015-ca0068845237)
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/79d7bfdf-f695-4f3a-8015-ca0068845237" width="50%">
+</div>
+
+### PIN DIAGRAM OF VSD SQUADRON MINI
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/1aff3793-a83c-450d-b7cf-4a12ae21a996" width="50%">
+</div>
+
 
 # Table for Pin connection:
 
